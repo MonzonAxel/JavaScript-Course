@@ -34,6 +34,9 @@ let num2 = 15;
 /* && and */
 /* || o */
 
+
+/*Si a>0 , a<0 , a=0 , b>0, b<0 , b=0 */
+
 if(num1>0){
     if(num2>0){
         console.log(`${num1} y ${num2} son mayores que 0`);
@@ -60,6 +63,8 @@ if(num1>0){
     }
 }
 
+/*Si word tiene mas de 4 letras , menos o igual */
+
 let word = 'Hola';
 
 if(word.length>4){
@@ -70,26 +75,16 @@ if(word.length>4){
     console.log(`${word} tiene 4 letras`);
 }
 
+
+/*Formas de if en una linea*/
+
 let respuesta = true;
 
-// Si el if es tan basico de una linea , se puede poner alado la siguiente linea
+
 
 if(respuesta=true) console.log(`Respuesta tiene el valor true`);
 if(respuesta!=false) console.log(`Respuesta tiene el valor false`);
 
 if(respuesta) console.log(`Respuesta tiene el valor true`);
 if(!respuesta) console.log(`Respuesta tiene el valor false`);
-
-
-// Este ejercicio lo hice yo , que numero es mayor a que 
-// let numero1=10;
-// let numero2=10;
-
-// if (numero2>numero1){
-//     console.log(`El numero ${numero2} es mayor a ${numero1}`)
-// } else if(numero1>numero2){
-//     console.log(`El numero ${numero1} es mayor a ${numero2}`)
-// }else{
-//     console.log(` El numero ${numero1} es igual a ${numero2}`)
-// }
 
