@@ -28,7 +28,7 @@ function jorge (numeros){
 
 console.log(jorge(numeros));
 
-//forma de funcion de flecha
+//Funcion con forma de flecha
 // const jorge = (numeros) => {
 //     let suma = numeros[0]+numeros[5];
 //     return suma;
