@@ -7,19 +7,25 @@ cuando tenemos un NodeList, puedo obtener un array de este mismo.
 .sort([callback]) - Ordena los elementos de un array alfabéticamente(valor Unicode), si le pasamos un callback los ordena en función del algoritmo que le pasemos.
 
 .forEach(valor,indice,callback)) - ejecuta la función indicada una vez por cada elemento del array.
-Axel: Recorre arrays , imprime sus elementos (currentValue) y si quisieramos su [index].
+Recorre arrays , imprime sus elementos (currentValue) y si quisieramos su [index]. No crea un nuevo array , usa el existente
 
 Dentro de cada callback tenemos los parametros del valor indice y array
 
 .some(callback(valor,indice,array)) - Comprueba si al menos un elemento del array cumple la condición
 
-.every(callback) - Comprueba si todos los elementos del array cumplen la condición
+.every(callback) - Comprueba si todos los elementos del array cumplen una condición
 
 .map(callback) - Transforma todos los elementos del array y devuelve un nuevo array
 
-.filter(callback) - Filtra todos los elementos del array que cumplan la condición y devuelve un nuevo array
+.filter(callback) - Filtra todos los elementos del array que cumplan la condición y devuelve un nuevo array filtrado
 
 .reduce(callback) - Reduce todos los elementos del array a un único valor
+
+.flat(num) - Aplana un arrays dentro de otros arrays , dejando un nuevo array unico y no multiples ,segun num que le indico.
+
+.fill(valor,start,end) - Reemplaza elementos de un array con el valor que le doy , desde un inicio hasta el final que indique
+
+
 */
 
 /* FROM */
@@ -57,12 +63,17 @@ Dentro de cada callback tenemos los parametros del valor indice y array
 
 // const numbers = [21, 5, 47, 84, 98]
 
-// //numbers.forEach((number)=>console.log(number))
+
+// numbers.forEach(valor => {    
+// console.log(valor)
+// });
+
+
 // numbers.forEach((number, index) =>
 //     console.log(`${number} está en la posición ${index}`)) 
 
 
-//Some
+//Some ( recorre todo el array y retorna true or false segun la condicion)
 
 
 // const users = [
@@ -79,7 +90,7 @@ Dentro de cada callback tenemos los parametros del valor indice y array
 // console.log(HayAlgunoMayor);
 
 
-// Forma veloz con entendimiento
+// Otro ejemplo mas directo y al grano de some
 
 // const words = ['H', 'C', 'JavaSc', 'P',]
 
@@ -90,13 +101,30 @@ Dentro de cada callback tenemos los parametros del valor indice y array
 // console.log(words.every(word => word.length>3));
 
 
-/* MAP */
+// MAP --> 
 
 // const numbers = [1, 2, 3, 4, 5] 
 
-//  const numbers2 = numbers.map(number => number * 2)
+//  const numbers2 = numbers.map(valor => valor * 2)
 
 // console.log(numbers2);
+
+// Ejemplo practico 
+
+// const students = [
+//     {email: "Jorge@asd"},
+//     {email: "Vanesa@asd"},
+//     {email: "Laura@zxc"}
+// ];
+
+// const SerializedStudent = (valor) => {
+//     valor.email = valor.email.toLocaleLowerCase()
+//     return valor
+// }
+
+// let Serialized = students.map(SerializedStudent)
+
+// console.log(Serialized)
 
 /* REDUCE */
 
