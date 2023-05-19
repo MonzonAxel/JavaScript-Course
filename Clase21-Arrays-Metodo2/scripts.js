@@ -30,101 +30,101 @@ Dentro de cada callback tenemos los parametros del valor indice y array
 
 /* FROM */
 
-// let word = 'Hola mundo'
+let word = 'Hola mundo'
 
-// console.log(Array.from(word));
-// console.log(word.split('')); 
+console.log(Array.from(word));
+console.log(word.split('')); 
 
 
 /* SORT */
 
-// const letters = ['b', 'c', 'z', 'a']
-// const numbers = [1,8,100,300,3]
+const letters = ['b', 'c', 'z', 'a']
+const numbers = [1,8,100,300,3]
 
-// console.log(letters.sort())
-// console.log(numbers.sort())
+console.log(letters.sort())
+console.log(numbers.sort())
 
-// console.log(numbers.sort((a,b)=>a-b))
+console.log(numbers.sort((a,b)=>a-b))
 
-// function menorMayor(a, b) {
-// if (a-b < 0) return -1;
-// if (a-b > 0) return 1;
-// if(a == b) return 0;
-// }
+function menorMayor(a, b) {
+if (a-b < 0) return -1;
+if (a-b > 0) return 1;
+if(a == b) return 0;
+}
 
-// function mayorMenor(a, b) {
-// if (b-a < 0) return -1;
-// if (b-a > 0) return 1;
-// if(b == a) return 0;
-// } 
+function mayorMenor(a, b) {
+if (b-a < 0) return -1;
+if (b-a > 0) return 1;
+if(b == a) return 0;
+} 
 
 /* FOREACH */
 
 
-// const numbers = [21, 5, 47, 84, 98]
+const numberss = [21, 5, 47, 84, 98]
 
 
-// numbers.forEach(valor => {    
-// console.log(valor)
-// });
+numberss.forEach(valor => {    
+console.log(valor)
+});
 
 
-// numbers.forEach((number, index) =>
-//     console.log(`${number} está en la posición ${index}`)) 
+numberss.forEach((number, index) =>
+    console.log(`${number} está en la posición ${index}`)) 
 
 
 //Some ( recorre todo el array y retorna true or false segun la condicion)
 
 
-// const users = [
-//     {name: 'Jorge', age: 48},
-//     {name: 'Valentinaa', age: 17},
-//     {name: 'Alejandra', age: 16},
-//     {name: 'Catalina', age: 24},
-// ];
+const users = [
+    {name: 'Jorge', age: 48},
+    {name: 'Valentinaa', age: 17},
+    {name: 'Alejandra', age: 16},
+    {name: 'Catalina', age: 24},
+];
 
-// const MayorCero = (user) => user.age > 9;
+const MayorCero = (user) => user.age > 9;
 
-// const HayAlgunoMayor = users.some(MayorCero);
+const HayAlgunoMayor = users.some(MayorCero);
 
-// console.log(HayAlgunoMayor);
+console.log(HayAlgunoMayor);
 
 
 // Otro ejemplo mas directo y al grano de some
 
-// const words = ['H', 'C', 'JavaSc', 'P',]
+const words = ['H', 'C', 'JavaSc', 'P',]
 
-// console.log(words)
+console.log(words)
 
-// console.log(words.some(word => word.length>5));
+console.log(words.some(word => word.length>5));
 
-// console.log(words.every(word => word.length>3));
+console.log(words.every(word => word.length>3));
 
 
-// MAP --> 
+// MAP 
 
-// const numbers = [1, 2, 3, 4, 5] 
+const numbersss = [1, 2, 3, 4, 5] 
 
-//  const numbers2 = numbers.map(valor => valor * 2)
+ const numbers2 = numbersss.map(valor => valor * 2)
 
-// console.log(numbers2);
+console.log(numbers2);
 
 // Ejemplo practico 
 
-// const students = [
-//     {email: "Jorge@asd"},
-//     {email: "Vanesa@asd"},
-//     {email: "Laura@zxc"}
-// ];
+const students = [
+    {email: "Jorge@asd"},
+    {email: "Vanesa@asd"},
+    {email: "Laura@zxc"}
+];
 
-// const SerializedStudent = (valor) => {
-//     valor.email = valor.email.toLocaleLowerCase()
-//     return valor
-// }
+const SerializedStudent = (valor) => {
+    valor.email = valor.email.toLocaleLowerCase()
+    return valor
+}
 
-// let Serialized = students.map(SerializedStudent)
+let Serialized = students.map(SerializedStudent)
 
-// console.log(Serialized)
+console.log(Serialized)
 
 /* REDUCE */
 

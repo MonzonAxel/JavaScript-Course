@@ -4,26 +4,25 @@ const person = {
    sons: ['Laura', 'Diego', 'Pepe', 'Rosa', 'Tomás']
 }
 
-// console.log(person.name);
-// console.log(person.sons[2]); 
+console.log(person.name);
+console.log(person.sons[2]); 
 
-// for(i=0; i<person.sons.length; i++){
-//     console.log(" Recorridos "+ person.sons[i])
-// }
+for(i=0; i<person.sons.length; i++){
+    console.log(" Recorridos "+ person.sons[i])
+}
 
 //Me muestra las propiedades name age y sons , NO SUS VALORES.
 
-// for(const key in person){
-//     console.log(key);
-//  }
+for(const key in person){
+    console.log(key);
+ }
 
  // Me muestra el contenido de las propiedades de mi objeto name age y sons
 
-//  for(const key in person){
-//     console.log(person[key]);
+ for(const key in person){
+    console.log(person[key]);
    
-
-// } 
+} 
 
 //  for(const son of person.sons){
 //     console.log(son);

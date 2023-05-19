@@ -13,9 +13,9 @@ let numbers = [1,2,3,4,5,1];
         Array.isArray(variable a evaluar) - Devuelve true si la variable es un array.
 */
 
-//let number = 4;
-//console.log(Array.isArray(number));
-//console.log(Array.isArray(numbers));
+// let number = 4;
+// console.log(Array.isArray(number));
+// console.log(Array.isArray(numbers));
 
 /*
     Eliminar un elemento
