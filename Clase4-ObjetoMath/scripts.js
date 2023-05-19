@@ -48,7 +48,7 @@ console.log(Math.round(num));
 
 // console.log(Math.random()*(max - min)(varia este resultado )+min ()(apartir de este numero);
 
-console.log(Math.round(Math.random()*(100 - 90)+20));
+console.log(Math.round(Math.random()*(100 - 50)+20));
 
 console.log(Math.sign(numneg)); 
 

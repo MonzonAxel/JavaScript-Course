@@ -66,7 +66,6 @@ trim()-> Elimina los espacios al inicio y al final de la cadena
 */
 
 let cadena2 = 'Hola estamos trabajando con cadenas';
-console.log(cadena2);
 
 console.log(cadena2.trim());
 
