@@ -23,7 +23,7 @@ if(a>=b && a>=c){
     if(b>c){
         result.textContent=(`El orden es ${a},${b},${c}`);
     }else{
-        result.textContent=(`El orden es ${a},c ${c},b ${b}`);
+        result.textContent=(`El orden es ${a}, ${c}, ${b}`);
     }50
 }else if(b>=a && b>=c){
     if(a>c){
@@ -40,31 +40,3 @@ if(a>=b && a>=c){
 }
 
 
-
-
-// Mi resolucion 
-// if(a>=b && a>=c){
-//     if(b>c){
-//         result.textContent=(`El orden es ${a},${b},${c}`);
-//     }else if(b<c){
-//         result.textContent=(`El orden es ${a},${c},${b}`);
-//     }else{
-//         result.textContent (`El orden es ${a},${b},${c}` ); 
-//     }  
-// }else if(b>=a && b>=c){
-//     if(a>c){
-//         result.textContent=(`El orden es ${b},${a},${c}`);
-//     }else if(a<c){
-//         result.textContent=(`El orden es ${b},${c},${a}`);
-//     }else{
-//         result.textContent=(`El orden es ${b},${a},${c}`);
-//     }
-// }else if (c>=a && c>=b){
-//     if(a>b){
-//         result.textContent=(`El orden es ${c},${a},${b}`)
-//     }else if (a<b){
-//         result.textContent=(`El orden es ${c},${b},${a}`)
-//     }else{
-//         result.textContent=(`El orden es ${c},${a},${c}`)
-//     }
-// }
