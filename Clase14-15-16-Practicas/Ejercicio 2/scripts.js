@@ -24,8 +24,8 @@ switch(requestm){
     case "circulo":
         let radio= prompt("Ingresar el radio del circulo");
         answer= Math.PI * Math.pow(radio,2);
-        alert(`El area del circulo es ${answer}`);
-        break
+        alert(`
+        breakEl area del circulo es ${answer}`);
     default:
         alert("Error al ingresar los parametros");
 }

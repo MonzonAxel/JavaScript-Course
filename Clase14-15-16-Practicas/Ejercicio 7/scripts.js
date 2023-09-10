@@ -4,6 +4,8 @@
     -el array de pares e impares
 */
 
+// Forma 1 
+
 const array = [1,2,3,4,5]; //Recordar el array comienza de la posicion i=0
 let pares = [];
 let impares = [];
@@ -19,3 +21,43 @@ for(i=0; i<array.length; i++){
 
 console.log(pares)
 console.log(impares)
+
+//Forma mediante funciones 
+
+// Función para generar un número aleatorio entre min (incluido) y max (excluido)
+const generarNumeroAleatorio = (min, max) => {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+// Función para multiplicar los números del primer array por números aleatorios y clasificarlos
+const multiplicarYClasificarNumeros = (numeros) => {
+    const pares = [];
+    const impares = [];
+
+    for (const numero of numeros) {
+        const resultado = numero * generarNumeroAleatorio(1,11);
+
+        if (resultado % 2 === 0) {
+            pares.push(resultado);
+        } else {
+            impares.push(resultado);
+        }
+    }
+
+    return {
+        pares,
+        impares
+    };
+}
+
+// Función principal
+const main = () => {
+    const numeros = [3, 8, 12, 5, 20];
+    const resultados = multiplicarYClasificarNumeros(numeros);
+
+    console.log("Números Pares:", resultados.pares);
+    console.log("Números Impares:", resultados.impares);
+}
+
+// Llama a la función principal para ejecutar el código
+main();
