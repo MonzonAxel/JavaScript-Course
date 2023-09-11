@@ -2,32 +2,32 @@ const form = document.getElementById('form')
 const input = document.getElementById('input')
 const button = document.getElementById('button')
 
- 
-//Las teclas que escribo en el input , se imprimen en la consola
-
-// input.addEventListener('keyup', (event) => {
-//     console.log(event.key);
-// }) 
-
-// Informacion en NodeList acerca del evento click , usar console.dir para que se muestre en la consola de google 
+//El parametro event me devuelve toda la informacion acerca del evento que estoy creando 
 
 button.addEventListener('click', (event)=> {
-    console.dir(event.target);
+    console.dir(event); // Otra muestra de datos en consola
 })
 
-/* const gallery = document.getElementById('gallery')
+// Dentro de la informacion , el key me devuelve que teclas presiona el usuario.
+
+input.addEventListener('keyup', (event)=> {
+    console.dir(event.key); 
+})
+
+
+ const gallery = document.getElementById('gallery')
 
 gallery.addEventListener('click', (e) => {
-    e.target.classList.add('red')
-}) */
+    e.target.classList.add('red') // tarjet es el lugar donde se genera el evento
+})
 
 
 //Preventdefault hace que lo que escribi no funcione para poder revisar algo, submit envia el formulario tan rapido que no llego a ver el console log con el prevent hago que no se envie todavia.
 
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault()
-//     console.log('El formulario se ha enviado');
-// })
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    console.log('El formulario se ha enviado');
+})
 
 // button.addEventListener('click', () => {
 //     input.value = 'Has hecho click'
