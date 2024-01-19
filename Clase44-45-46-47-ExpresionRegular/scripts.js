@@ -12,7 +12,7 @@
         g: global. Busca de forma global, es decir, no se para después de la primera coincidencia
 
     Comodines:
-        -Sustitución: Define un comodín dentro del patron. El símbolo es el "." Si no sabemos que caracteres hay entre el medio de una palabra con los puntos indico que puede ser cualquier caracter ejemplo busco la palabra lorem como l..em
+        -Sustitución: Define un comodín dentro del patron. El símbolo es el "." Si no sabemos que caracteres hay entre el medio de una palabra, con los puntos indico que puede ser cualquier caracter, ejemplo busco la palabra lorem como l..em
 
         Con la barra invertida \(es un escape de caracteres. Por ejemplo quiero buscar foto001.jpg) como foto....jpg , los puntos los trata como cualquier caracter , de modo tal que con la barra invertida hago un escape y lo proximo a dicha barra es el caracter real por ejemplo \.jpg  
 

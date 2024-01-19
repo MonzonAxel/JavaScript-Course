@@ -18,7 +18,14 @@ input.addEventListener('keyup', (event)=> {
  const gallery = document.getElementById('gallery')
 
 gallery.addEventListener('click', (e) => {
-    e.target.classList.add('red') // tarjet es el lugar donde se genera el evento
+    console.log(e.target.nodeName)
+    if(e.target.classList.contains("red")) {
+        return e.target.classList.remove("red")
+    }
+    else{
+        e.target.classList.add('red')
+    }
+    
 })
 
 

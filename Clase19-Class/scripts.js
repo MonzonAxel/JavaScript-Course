@@ -10,6 +10,9 @@ class Persona{
     saludar(){
         return `Hola, me llamo ${this.nombre} y tengo ${this.edad} años.`
     }
+    saludar2(){
+        return `Prueba 2 ${this.datos}`
+    }
 }
 
 const juan = new Persona('Juan', 'García', 25)
@@ -19,3 +22,4 @@ console.log(juan);
 
 console.log(juan.saludar());
 console.log(marta.saludar());
+console.log(juan.saludar2());

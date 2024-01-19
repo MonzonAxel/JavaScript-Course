@@ -2,20 +2,19 @@
 
 /* 
 Padre - parent (Nodo del que desciende)
-    - parentNode - Devuelve el nodo padre (que puede no ser un elemento)
-    - parentElement - Devuelve el nodo elemento padre
+    - parentNode - Devuelve el nodo padre (aunque no sea un elemento)
+    - parentElement - Devuelve el nodo elemento padre si es elemento HTML
 
     NOTA
     Los nodos del tipo Document y DocumentFragment nunca van a tener un elemento padre, parentNode y parentElement devolverá siempre null.
 
 Hijos - child (Nodo que desciende de un padre)
-    - childNodes - Devuelve todos los nodos hijos , inclusive los no elementos como pueden ser saltos de linea "/n"
     - children - Devuelve todos los nodos que son elementos hijos
     - firstChild - Devuelve el primer nodo hijo que puede ser un salto de linea tambien , prefible usar ↓ :
-    - firstElementChild - Devueleve el primer nodo elemento hijo
+    - firstElementChild - Devuelve el primer nodo elemento hijo
     - lastChild - Devuelve el último nodo hijo , que tambien puede ser un salto de linea , por lo tanto preferible usar ↓ :
-    - lastElementChild - Devueleve el último nodo elemento hijo
-    - hasChildNodes() - Devueleve true si el nodo tiene hijos y false si no tiene
+    - lastElementChild - Devuelve el último nodo elemento hijo
+    - hasChildNodes() - Devuelve true si el nodo tiene hijos y false si no tiene
 
 Hermanos - siblings (Nodo al mismo nivel)
     - nextSibling - Devuelve el siguiente nodo hermano , puede devolver salto de linea mejor usar ↓

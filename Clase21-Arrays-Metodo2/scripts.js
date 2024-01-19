@@ -83,7 +83,9 @@ const users = [
     {name: 'Catalina', age: 24},
 ];
 
-const MayorCero = (user) => user.age > 9;
+const MayorCero = (user) => {
+   return user.age > 9; 
+}  
 
 const HayAlgunoMayor = users.some(MayorCero);
 
@@ -118,6 +120,10 @@ const students = [
 ];
 
 const SerializedStudent = (valor) => {
+    if (valor.email === "Jorge@asd"){
+        valor.email = "NewEmail@hotmail.com"
+        return valor
+      } 
     valor.email = valor.email.toLocaleLowerCase()
     return valor
 }
@@ -126,13 +132,41 @@ let Serialized = students.map(SerializedStudent)
 
 console.log(Serialized)
 
-/* REDUCE */
+//Ejemplo practico 2 Map
 
-// const numbers2 = numbers.filter(number => number > 80)
+const productos = [
+    {id:"0958-asdq-qweqweas" , nombre:"Camiseta", precio:500},
+    {id:"0024-ExKlJ-PooLJxrT" , nombre:"Pantalon", precio:1500},
+    {id:"2496-qWtYRl-FLtpQz" , nombre:"Campera", precio:2000}
+    ]
+    
+    const productoDescuento = productos.map(producto => {
+      if ( producto.precio > 1700){
+         return {
+        ...producto,
+        precio : producto.precio * 0.85
+      }
+    }
+      return producto
+     
+    })
+    
 
-// console.log(numbers2)
+    console.log(productos)
+    console.log(productoDescuento)
 
-// console.log(numbers.reduce((a,b)=>a+b))
+    const idProductos = productos.map(({id}) => id)
+    console.log(idProductos)
+
+
+    
+    // const numbers2 = numbers.filter(number => number > 80)
+    
+    // console.log(numbers2)
+
+    /* REDUCE */
+
+    // console.log(numbers.reduce((a,b)=>a+b))
 
 // const users = [
 //     {

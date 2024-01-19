@@ -15,7 +15,7 @@
         continue - Se salta la(s) posicion(es) que le indequemos y después continúa su ejecución
 */
 
-let names = ['Paco', 'José', 'Paula', 'María']
+let names = ['Paco', 'José', 'Paula', 'María',"Jorge"]
 
 
 

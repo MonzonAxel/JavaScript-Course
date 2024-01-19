@@ -1,0 +1,2 @@
+Se mejora el sistema de message() , en el cual en la v1 siempre estamos creando h3 por cada elemento li que se agrega o que se borra , por lo tanto separamos dicha implementacion. 
+Solamente tendremos encuenta el contenido de h3 mediante el updateMessage()

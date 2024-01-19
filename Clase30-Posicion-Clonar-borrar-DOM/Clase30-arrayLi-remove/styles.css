@@ -1,0 +1,20 @@
+#title{
+    text-align: center;
+    }
+    
+    div{
+      display: flex;
+      justify-content: center;;
+    
+    }
+    
+    button{
+    
+      margin: 0 auto;
+    }
+    
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }

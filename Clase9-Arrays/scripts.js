@@ -21,17 +21,9 @@ console.log(numeros[0]+numeros[5]);
 console.log(`La palabra "${palabras[0]}" tiene ${palabras[0].length} letras`);
 
 
-function jorge (numeros){
+const jorge = (numeros) => {
     let suma = numeros[0]+numeros[5];
     return suma;
 }
 
-console.log(jorge(numeros));
-
-//Funcion con forma de flecha
-// const jorge = (numeros) => {
-//     let suma = numeros[0]+numeros[5];
-//     return suma;
-// }
-
-// console.log(jorge);
+console.log(jorge);

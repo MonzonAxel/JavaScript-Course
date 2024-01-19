@@ -1,15 +1,18 @@
 /*
 Insertar y eliminar elementos II
 
-    parent.insertBefore(newElement, referenceElement) - Insertar un elemento antes del elemento de referencia
+    parent.insertBefore(newElement, referenceElement.children[number]) - Insertar un elemento antes del elemento de referencia 
 
     SOPORTE TOTAL
     parent.insertAdjacentElement(position, element)
 
     positions: 
-        beforebegin - Antes de que empiece (hermano anterior)
+    // Mas usados:
         afterbegin - después de que empiece (primer hijo)
         beforeend - antes de que acabe (último hijo)
+
+    // Medio meh
+        beforebegin - Antes de que empiece (hermano anterior)
         afterend - después de que acabe (hermano siguiente)
 
     parent.replaceChild(newChild, oldChild) - Reemplaza un hijo por otro
@@ -37,10 +40,7 @@ list.insertBefore(newElement, list.children[1])
 
 
 
-/* Todo lo anterior tambien se puede utilizar los nuevos metodos de esta forma 
-
-    DOM manipulation convenience methods - JQuery Like
-    https://caniuse.com/#search=jQuery-like
+/* Todo lo anterior es identico a lo siguiente : 
 
     positions:
         parent.before() - Antes de que empiece (hermano anterior)
@@ -49,7 +49,7 @@ list.insertBefore(newElement, list.children[1])
         parent.after() - después de que acabe (hermano siguiente) 
 
         child.replaceWith(newChild)
-*/
+
 
 
 //list.children[0].before(newElement)
@@ -61,17 +61,19 @@ list.insertBefore(newElement, list.children[1])
 // list.children[1].after(newElement)
 
 //document.getElementById('child-to-replace').replaceWith(newElement)
+*/
+
+
+
 
 /*
     Clonar y eliminar elementos
-        element.cloneNode(true|false) - Clona el nodo. Si le pasamos true clona todo el elemento con los hijos, si le pasamos false clona solo el elemento sin hijos
-
+        element.cloneNode(true|false) - Clona el nodo.En true todos sus hijos , with false solo el elemento.
         element.remove() - Elimina el nodo del DOM
         element.removeChild(child) - Elimina el nodo hijo del DOM
 */
 
-// como clonar la lista en el hermano siguiente, hay que tener cuidado porque tambien hay un error gordo que se clona el id
-
+// Al clonar , tambien clono sus propiedades, como la id , por lo tanto puede generar grandes problemas !!
 //list.after(list.cloneNode(true))
 
 //list.remove()

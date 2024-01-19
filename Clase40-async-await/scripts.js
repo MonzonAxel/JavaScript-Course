@@ -1,4 +1,5 @@
- 
+ // Basicamente sirve para esperar que una promesa se complete correctamente y asignar el valor a alguna otra variable , funcion etc.
+
  // Ejemplo sencillo 
 
  // Tenemos la funcion getName el cual es asincrono y devuelve como resolve Axelito 
@@ -25,7 +26,7 @@ sayHello() // ejecuto la funcion .
 
 
 
-// Ejemplo practico :
+// Ejemplo practico ( Que no es tan practico ya que no usa un SetTimeOut o algun fetch que tenga que tardar en procesar.) :
 
 
 // const users = [{ id: 1, name: 'Dorian' }, { id: 2, name: 'Laura' }, { id: 3, name: 'Carlos' }]
