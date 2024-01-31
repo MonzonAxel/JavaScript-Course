@@ -74,7 +74,6 @@ const checkWinner = (currentTurn) =>{
         return array.every(position => cells[position].classList.contains(currentTurn));
     });
 
-    console.log(winner)
 
     if(!winner) return
 
