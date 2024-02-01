@@ -1,0 +1,1 @@
+Basicamente al cambiar de pesteña el video se pausa, si estamos en la pestaña del video , este se reproduce. 
