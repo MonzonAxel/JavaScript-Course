@@ -1,0 +1,4 @@
+1.Crear la base de datos a traves del objeto indexedDB y metodo open () 
+2.Comprobar si existe la base con el metodo opupgradeneeded()
+3.Crear el almacen de objetos o la coleecion con metodo createObjectStore() 
+4.Escuchar los eventos de exito y error, onsucess() onerror()
