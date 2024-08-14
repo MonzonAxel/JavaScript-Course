@@ -19,6 +19,10 @@
 const smile = document.getElementById('smile')
 const dropZone = document.getElementById('drop-zone')
 
+smile.addEventListener("dragstart", () =>{
+    console.log("Drag Start")
+})
+
 smile.addEventListener('dragend', () => {
     console.log('Drag End')
 })
