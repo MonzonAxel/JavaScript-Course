@@ -26,6 +26,9 @@ body {
   background: rgb(48, 166, 221);
   border: 1px solid black;
   min-height: 130px;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .tasks:first-child {
@@ -50,4 +53,10 @@ body {
 .active {
   background-color: #fff;
   color: #000;
+}
+
+.placeholder {
+  background-color: #e0e0e0;
+  border: 2px dashed #aaa;
+  margin: 5px 0;
 }
